@@ -1,0 +1,6 @@
+node_modules/
+.env
+.features-gen/
+playwright-bdd-report/
+playwright-report/
+test-results/

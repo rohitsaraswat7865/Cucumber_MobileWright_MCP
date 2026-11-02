@@ -1,0 +1,19 @@
+{
+  "name": "30102026",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "bddgen": "bddgen -c mobilewright.config.js",
+    "test": "npm run bddgen && mobilewright test",
+    "test:tag": "npm run bddgen && mobilewright test --grep",
+    "report": "open-cli playwright-report/index.html"
+  },
+  "devDependencies": {
+    "@mobilewright/test": "^0.0.67",
+    "dotenv": "^16.4.5",
+    "mobilewright": "^0.0.67",
+    "open-cli": "^8.0.0",
+    "playwright-bdd": "^9.2.1"
+  }
+}
