@@ -4,3 +4,5 @@ node_modules/
 playwright-bdd-report/
 playwright-report/
 test-results/
+logs/*
+!logs/.gitkeep

@@ -1,4 +1,9 @@
 {
   "cucumber.features": ["features/**/*.feature"],
-  "cucumber.glue": ["features/steps/**/*.js"]
+  "cucumber.glue": ["features/steps/**/*.js"],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": { "source.fixAll.eslint": "explicit" },
+  "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" }
 }

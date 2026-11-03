@@ -1,19 +1,28 @@
 {
-  "name": "30102026",
+  "name": "cucumber-mobilewright-mcp",
   "version": "1.0.0",
   "private": true,
   "type": "module",
+  "engines": {
+    "node": ">=20.12"
+  },
   "scripts": {
     "bddgen": "bddgen -c mobilewright.config.js",
     "test": "npm run bddgen && mobilewright test",
     "test:tag": "npm run bddgen && mobilewright test --grep",
-    "report": "open-cli playwright-report/index.html"
+    "report": "playwright show-report playwright-report",
+    "format": "eslint . --fix && prettier --write ."
   },
   "devDependencies": {
-    "@mobilewright/test": "^0.0.67",
-    "dotenv": "^16.4.5",
-    "mobilewright": "^0.0.67",
-    "open-cli": "^8.0.0",
-    "playwright-bdd": "^9.2.1"
+    "@eslint/js": "^9.0.0",
+    "@mobilenext/mobile-mcp": "latest",
+    "@mobilewright/test": "latest",
+    "@playwright/test": "1.63.0",
+    "eslint": "^9.0.0",
+    "eslint-config-prettier": "^10.0.0",
+    "globals": "^15.0.0",
+    "mobilewright": "latest",
+    "playwright-bdd": "latest",
+    "prettier": "^3.0.0"
   }
 }

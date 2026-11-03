@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "deny": [
+      "Read(./node_modules/**)",
+      "Read(./.features-gen/**)",
+      "Read(./playwright-report/**)",
+      "Read(./playwright-bdd-report/**)",
+      "Read(./test-results/**)",
+      "Read(./logs/**)",
+      "Read(./package-lock.json)",
+
+      "Edit(./.env)",
+      "Edit(./.env.*)",
+      "Edit(./node_modules/**)",
+      "Edit(./.features-gen/**)",
+      "Edit(./playwright-report/**)",
+      "Edit(./playwright-bdd-report/**)",
+      "Edit(./test-results/**)",
+      "Edit(./logs/**)",
+      "Edit(./package-lock.json)",
+
+      "Bash(npm test)",
+      "Bash(npm test *)",
+      "Bash(npm t)",
+      "Bash(npm t *)",
+      "Bash(npm run test)",
+      "Bash(npm run test *)",
+      "Bash(npm run test:tag)",
+      "Bash(npm run test:tag *)",
+      "Bash(npm run bddgen)",
+      "Bash(npm run bddgen *)",
+      "Bash(npx bddgen)",
+      "Bash(npx bddgen *)",
+      "Bash(bddgen)",
+      "Bash(bddgen *)",
+      "Bash(npx mobilewright test)",
+      "Bash(npx mobilewright test *)",
+      "Bash(mobilewright test)",
+      "Bash(mobilewright test *)",
+      "Bash(npx playwright test)",
+      "Bash(npx playwright test *)",
+      "Bash(playwright test)",
+      "Bash(playwright test *)"
+    ]
+  }
+}
